@@ -1,0 +1,371 @@
+@charset"utf-8";
+
+/*==============================
+PC
+==============================*/
+body{
+  padding-top:62px;
+}
+
+#header{
+  width:100%;
+  min-width:1024px;
+  min-height:62px;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:5;
+}
+
+#header::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+#header .headerLogo,
+#header .headerLogo a{
+  width:250px;
+  height:62px;
+  box-sizing:border-box;
+}
+
+#header .headerLogo{
+  float:left;background:#fff;
+}
+
+#header .headerLogo a{
+  display:table-cell;
+  vertical-align:middle;
+  padding-left:20px;
+}
+
+#header .headerLogo img{
+  width:116px;
+  max-width:100%;
+  height:auto;
+}
+
+#header .globalNav{
+  float:left;
+  height:62px;
+}
+
+#header .globalNav::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+#header .globalNav li{
+  display:block;
+  float:left;
+}
+
+#header .globalNav li a{
+  width:156px;
+  height:62px;
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
+  box-sizing:border-box;
+  font-weight:bold;
+  border-left:solid 1px #000;
+  border-bottom:solid 3px #000;
+  border-collapse:separate;
+}
+
+#header .globalNav li a img{
+  vertical-align:middle;
+  margin-right:10px;
+}
+
+#header .globalNav li a:hover{}
+#header .globalNav li:last-child a{
+  border-right:solid 1px #ccc;
+}
+
+#header .globalNav li.select a{
+  border-bottom:solid 3px #000;
+}
+
+#header .headerUserOperation{
+  float:right;
+  margin-top:21px;
+  letter-spacing:-0.4em;
+  text-align:right;
+}
+
+#header .headerUserOperation .loginUser,
+#header .headerUserOperation .logout{
+  display:inline-block;
+  text-align:center;
+  vertical-align:middle;
+  margin-right:20px;
+  letter-spacing:normal;
+  font-size:11px;
+  font-size:1.1rem;
+}
+
+#header .headerUserOperation .loginUser img,
+#header .headerUserOperation .logout img{
+  display:inline-block;
+  vertical-align:middle;
+  margin-right:5px;
+}
+
+#header .headerUserOperation .loginUser{margin-right:30px;}
+
+#header .headerUserOperation .logout{margin-right:30px;}
+#header .headerUserOperation .logout img{
+  width:12px;
+  height:14px;
+}
+
+#header .spMenu{
+    display:none;
+}
+
+#contentsWrap{
+  box-sizing:border-box;
+  height:100%;
+  position:relative;
+  padding-left:250px;
+}
+
+#contentsWrap::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+#mainContents{
+  background:#fff;
+  width:100%;
+  height:100%;
+  min-width:980px;
+  box-sizing:border-box;
+  position:relative;
+  overflow:hidden;
+  padding-top:100px;
+}
+#sidebar{
+  width:250px;
+  height:100%;
+  overflow:auto;
+  position:absolute;
+  top:0;
+  left:0;
+  box-sizing:border-box;
+  font-size:12px;
+  font-size:1.2rem;
+}
+#sidebar .textH2{
+  font-weight:bold;
+  padding:15px 0 15px 45px;
+}
+
+#footer{
+  display:none;
+}
+
+/*==============================
+Header
+==============================*/
+@media screen and (max-width:1145px){
+  #header .headerUserOperation{
+    position:relative;
+    margin-top:10px;
+  }
+  #header .headerUserOperation .loginUser{
+    position: absolute;
+    bottom:-10px;
+    right:20px;
+    margin:0;
+  }
+  #header .headerUserOperation .logout{margin-right:30px;}
+  #header .headerUserOperation .logout img{
+    width:12px;
+    height:14px;
+  }
+}
+
+/*==============================
+SP less than 736px
+==============================*/
+@media screen and (max-width:736px) {
+  body{padding-top:35px;}
+  #header{
+    width:100%;
+    min-width:auto;
+    min-height:auto;
+  }
+
+  #header .headerLogo,
+  #header .headerLogo a{
+    width:auto;
+    height:auto;
+    box-sizing:border-box;
+  }
+
+  #header .headerLogo{
+      float:right;
+      background:#fff;
+  }
+
+  #header .headerLogo a{
+    display:table-cell;
+    vertical-align:middle;
+    padding:0;
+  }
+
+  #header .headerLogo img{
+    width:88px;
+    max-width:100%;
+    height:auto;
+    margin:5px;
+  }
+
+  #header .globalNav{
+    float:left;
+    height:62px;
+  }
+
+  #header .globalNav::after{
+    content:"";
+    display:block;
+    clear:both;
+  }
+
+  #header .globalNav li{
+    display:block;
+    float:left;
+  }
+
+  #header .globalNav li .link{
+    width:156px;
+    height:62px;
+    display:table-cell;
+    text-align:center;
+    vertical-align:middle;
+    box-sizing:border-box;
+    font-weight:bold;
+    border-left:solid 1px #ccc;
+  }
+
+  #header .globalNav li:last-child .link{
+    border-right:solid 1px #ccc;
+  }
+
+  #header .globalNav li.select .link{
+    border-bottom:solid 3px #fff;
+  }
+
+  #header .headerUserOperation{
+    float:right;
+    margin-top:17px;
+    letter-spacing:-0.4em;
+  }
+
+  #header .headerUserOperation li{
+    display:inline-block;
+    text-align:center;
+    vertical-align:middle;
+    margin-right:20px;
+    letter-spacing:normal;
+    font-size:11px;
+    font-size:1.1rem;
+  }
+
+  #header .headerUserOperation li:last-child{margin-right:20px;}
+  #header .headerUserOperation li.loginUser{margin-right:30px;}
+  #header .headerUserOperation li.logout{margin-right:30px;}
+
+  #header .spMenu{
+    display:block;
+    float:left;
+    width:20px;
+    height:20px;
+    background:#ccc;
+    margin:9px 0 0 9px;
+  }
+
+  #contentsWrap{
+    box-sizing:border-box;
+    height:auto;
+    position:static;
+    padding:0;
+  }
+
+  #mainContents{
+    background:#fff;
+    width:100%;
+    height:auto;
+    min-width:auto;
+    box-sizing:border-box;
+    overflow:auto;
+    position:static;
+  }
+
+  .mainInformation{
+    position:static;
+  }
+
+  #mainContents.noInfo{padding-top:0;}
+  #mainContents.noInfo .mainInformation{display:none;}
+  #sidebar{
+    -webkit-transition:all .1s ease-in-out;
+    -moz-transition:all .1s ease-in-out;
+    -o-transition:all .1s ease-in-out;
+    transition:all .1s ease-in-out;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    position:fixed;
+    top:36px;
+    left:-100%;
+    box-sizing:border-box;
+    z-index:3;
+    padding-bottom:36px;
+  }
+
+  #sidebar.hide{
+    left:0;
+  }
+
+  #footer{
+    display:block;
+  }
+
+  .footerNav{}
+  .footerNav li{
+    float:left;
+    width:33.33%;
+    text-align:center;
+    box-sizing:border-box;
+    border-bottom:solid 3px #000;
+    font-size:12px;
+    font-size:1.2rem;
+    font-weight:bold;
+    padding:40px 0 15px;
+  }
+
+  .footerNav li:nth-of-type(2){
+    border-left:solid 1px #000;
+    border-right:solid 1px #000;
+  }
+
+  .footerAddress{
+    font-size:12px;
+    font-size:1.2rem;
+    padding:20px 0;
+    text-align:center;
+  }
+
+  .copyRight{
+    font-size:10px;
+    font-size:1.0rem;
+    text-align:center;
+    padding:20px 0;
+  }
+}

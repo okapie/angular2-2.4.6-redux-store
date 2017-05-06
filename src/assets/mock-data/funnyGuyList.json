@@ -1,0 +1,30 @@
+{
+  "data": {
+    "members": [
+      {
+        "memberId": "A001",
+        "name": "Takosan",
+        "path": "/assets/images/chara_takosan.png",
+        "alt": "Takosan picture"
+      },
+      {
+        "memberId": "A002",
+        "name": "Black BBA",
+        "path": "/assets/images/chara_black_bba.png",
+        "alt": "Black BBA picture"
+      },
+      {
+        "memberId": "A003",
+        "name": "White BBA",
+        "path": "/assets/images/chara_white_bba.png",
+        "alt": "White BBA picture"
+      },
+      {
+        "memberId": "A004",
+        "name": "Onigiri",
+        "path": "/assets/images/chara_onigiri.png",
+        "alt": "Onigiri picture"
+      }
+    ]
+  }
+}

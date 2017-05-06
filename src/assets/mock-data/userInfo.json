@@ -1,0 +1,12 @@
+{
+  "data": {
+    "users": [
+      {
+        "id": 1,
+        "name": "Jhonny",
+        "email": "hoge@hage.com",
+        "password": "hoge123"
+      }
+    ]
+  }
+}

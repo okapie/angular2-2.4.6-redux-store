@@ -1,0 +1,21 @@
+<div>
+    <h1 class="headerLogo">
+        <img src="/assets/images/chara_black_bba.png" alt="BBA">
+    </h1>
+    <div class="wrapper" [hidden]="submitted">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()" novalidate class="form-signin">
+            <h3 class="text-center">ID</h3>
+            <input formControlName="email" type="email" class="form-control" name="Email" placeholder="ID" />
+                <div class="err-message">{{ model.errorEmail }}</div>
+            <h3 class="text-center">PASSWORD</h3>
+            <input formControlName="password" type="password" class="form-control" name="Password" placeholder="PASSWORD" />
+            <div class="err-message">{{ model.errorPassword }}</div>
+            <button class="btn btn-lg btn-primary btn-block" name="Submit" value="Login" type="Submit">
+                <div>LOGIN</div>
+            </button>
+        </form>
+    </div>
+    <div class="wrapper" [hidden]="!submitted">
+        Loading...
+    </div>
+</div>

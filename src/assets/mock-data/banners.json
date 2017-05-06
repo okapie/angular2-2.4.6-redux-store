@@ -1,0 +1,26 @@
+{
+  "data": {
+    "banners": [
+      {
+        "bannerId": "B001",
+        "path": "/assets/images/banner_bba.jpg",
+        "alt": "Falling BBA"
+      },
+      {
+        "bannerId": "B002",
+        "path": "/assets/images/banner_dog.jpg",
+        "alt": "Running Dog"
+      },
+      {
+        "bannerId": "B003",
+        "path": "/assets/images/banner_white_bbas.jpg",
+        "alt": "Falling white BBAS"
+      },
+      {
+        "bannerId": "B004",
+        "path": "/assets/images/banner_black_bbas.jpg",
+        "alt": "Falling black BBAS"
+      }
+    ]
+  }
+}

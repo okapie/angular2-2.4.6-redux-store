@@ -1,0 +1,18 @@
+<common-header></common-header>
+<div id="contentsWrap">
+    <main id="mainContents">
+        <div>
+            <div>Funny Guy Concert 2017 Banners</div>
+            <div>Synced banners:
+                <ul *ngFor="let item of (bannersInfo | async)" class="bannerList">
+                    <li>
+                        <img [src]="item.path" [alt]="item.alt" width="50%" height="auto">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <aside>
+        <section class="m120"></section>
+    </aside>
+</div>

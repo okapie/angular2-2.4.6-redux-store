@@ -1,0 +1,32 @@
+<header id="header" class="cf">
+    <h1 class="headerLogo">
+        <a [routerLink]="['/concert']"><img src="/assets/images/chara_onigiri.png" alt="Home"></a>
+    </h1>
+    <nav class="globalNav spNone">
+        <ul>
+            <li class="mailIcon select">
+                <a [routerLink]="['/concert']">
+                    INFORMATION
+                </a>
+            </li>
+            <li class="addressIcon">
+                <a [routerLink]="['/special']">
+                    SPECIAL TOPIC
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <section class="headerUserOperation spNone">
+        <div class="loginUser">
+            <ul *ngFor="let item of (userInfo | async)">
+                <li>
+                    Hi, {{ item.name }} !
+                </li>
+            </ul>
+        </div>
+        <div class="logout" (click)="doLogout()">
+            LOGOUT
+        </div>
+    </section>
+    <div class="spMenu" ng-click="flag = !flag"></div>
+</header>
